@@ -51,7 +51,9 @@
 .article-body ul, .article-body ol { margin: 0 0 1rem 1.2rem; padding: 0; }
 .article-body li { margin: 0.25rem 0; }
 .article-body a { color: #6b5420; text-decoration-thickness: 1px; text-underline-offset: 2px; }
-.article-body img { margin: 1rem auto; border: 1px solid var(--line); }
+.article-body img { margin: 1rem auto; border: 1px solid var(--line); max-width: 100%; height: auto; }
+.article-figure { margin: 0 0 1.25rem; }
+.article-figure img { width: 100%; max-width: 640px; }
 .article-body pre {
   overflow-x: auto; padding: 0.85rem 1rem; background: #111418; color: #f2efe8;
   font-size: 0.86rem; line-height: 1.5; margin: 0 0 1rem;
