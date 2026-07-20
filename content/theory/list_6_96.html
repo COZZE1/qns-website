@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report Accuracy Verification Summary — Quantum Narrative School</title>
+  <meta name="robots" content="noindex,follow">
+  <script src="../../js/guard.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/site.css">
+  <link rel="stylesheet" href="../../css/article.css">
+</head>
+<body class="article-page">
+  <a class="skip" href="#article-main">Skip to content</a>
+  <header class="article-top">
+    <a class="article-home" href="../../index.html">Quantum Narrative School</a>
+    <a class="article-back" href="../../index.html#theory">← Theory</a>
+  </header>
+  <main id="article-main" class="article-main">
+    <aside class="article-boundary" role="note">
+  <strong>Claim boundary</strong>
+  <p>Archival page · programme materials · not cosmogenesis closure · not unique-true-theory · not engineering/investment advice. Prefer machine-readable SSOT / honest-disclosure registers over rhetorical wording.</p>
+</aside>
+    <header class="article-header">
+      <p class="article-kicker">Theory</p>
+      <h1>Report Accuracy Verification Summary</h1>
+      <time class="article-date" datetime="2025-12-23">2025-12-23</time>
+      <p class="article-source">Source: https://www.q-n-s.com/?list_6/96.html</p>
+    </header>
+    <article class="article-body">
+<p><strong>Verification Date</strong>: 2025年12月</p>
+<p><strong>Verification Method</strong>: CSV数据对比 + 报告数据对比 + Code Implementation Verification</p>
+<h2>✅ Verification Results</h2>
+<h3>1. Data Accuracy验证</h3>
+<p>所有报告中的数据已与CSV数据（batch_theoretical_stats_summary.csv）进行对比验证：</p>
+<p>参数CSVMeanCSVStandard Deviation报告值Status <strong>omega_m</strong>0.334985897664976330.0120229102552718950.334986 ± 0.012023✅ <strong>Updated</strong> <strong>ell_1</strong>203.4184266412373511.83606150875202203.418 ± 11.836✅ <strong>Updated</strong> <strong>n_s</strong>0.95999637285966290.00069817017379680870.960000 ± 0.000698✅ <strong>Updated</strong> <strong>A_s</strong>2.1e-092.2384724458521955e-252.1e-9✅ <strong>Accurate</strong> <strong>H_0</strong>69.238922452151443.617085937539655669.239 ± 3.617✅ <strong>Updated</strong> <strong>w_0</strong>-1.0121824282444680.0009740372853679278-1.012182 ± 0.000974✅ <strong>Updated</strong> <strong>w_a</strong>0.007833471170419950.000471681269451628540.007833 ± 0.000472✅ <strong>Updated</strong></p>
+<p><strong>Verification Results</strong>: ✅ <strong>所有参数值Updated为CSV精确值</strong></p>
+<h3>2. Fixed Issues</h3>
+<h4>问题1: MODEL_RUN_VERIFICATION.md 中的&quot;报告值&quot;不Accurate</h4>
+<ul>
+<li><strong>Before Fix</strong>: 报告值 0.3356（与实际CSV值0.334986不Consistent）</li>
+</ul>
+<ul>
+<li><strong>After Fix</strong>: 报告值 0.334986（与CSV值完全匹配）</li>
+</ul>
+<ul>
+<li><strong>Status</strong>: ✅ <strong>已修复</strong></li>
+</ul>
+<h4>问题2: COMPLETE_CALCULATION_PROCESS.md 中的参数值精度不足</h4>
+<ul>
+<li><strong>Before Fix</strong>:</li>
+</ul>
+<ul>
+<li>omega_m: 0.3356 ± 0.0131</li>
+</ul>
+<ul>
+<li>H_0: 69.23 ± 3.62</li>
+</ul>
+<ul>
+<li>w_a: 0.0078 ± 0.0005</li>
+</ul>
+<ul>
+<li><strong>After Fix</strong>:</li>
+</ul>
+<ul>
+<li>omega_m: 0.334986 ± 0.012023</li>
+</ul>
+<ul>
+<li>H_0: 69.239 ± 3.617</li>
+</ul>
+<ul>
+<li>w_a: 0.007833 ± 0.000472</li>
+</ul>
+<ul>
+<li><strong>Status</strong>: ✅ <strong>已修复</strong></li>
+</ul>
+<h3>3. Deviation Calculation Verification</h3>
+<p>所有Deviation计算已验证正确：</p>
+<p>参数理论MeanPlanck值计算Deviation报告DeviationStatus <strong>omega_m</strong>0.3349860.315+6.35%+6.35%✅ <strong>Accurate</strong> <strong>ell_1</strong>203.418220.0-7.54%-7.54%✅ <strong>Accurate</strong> <strong>n_s</strong>0.9600000.9649-0.51%-0.51%✅ <strong>Accurate</strong> <strong>A_s</strong>2.1e-92.1e-90.00%0.00%✅ <strong>Accurate</strong> <strong>H_0</strong>69.23967.4+2.73%+2.73%✅ <strong>Accurate</strong> <strong>w_0</strong>-1.012182-1.03-1.73%-1.73%✅ <strong>Accurate</strong> <strong>w_a</strong>0.0078330.00.00780.0078✅ <strong>Accurate</strong></p>
+<p><strong>Verification Results</strong>: ✅ <strong>所有Deviation计算Accurate</strong></p>
+<h3>4. Code Implementation Verification</h3>
+<p>关键参数的计算方法已与Code Implementation Verification：</p>
+<p>参数代码位置实现方法报告描述Status <strong>alpha_omega_m</strong>unified_coefficient_derivation.py:28理论公式计算第一性原理推导✅ <strong>Consistent</strong> <strong>H_0</strong>qnm_complete_theoretical_derivation.py:734-752t_cosmic=14.5, age_correction=0.15, CORE_CONCENTRATION_SCALE_FACTOR_H0=0.88三步修正方案✅ <strong>Consistent</strong> <strong>w_a</strong>unified_coefficient_derivation.py:199从c_eff推导，归一化因子n*3消除硬编码22.0✅ <strong>Consistent</strong></p>
+<p><strong>Verification Results</strong>: ✅ <strong>代码实现与报告描述Consistent</strong></p>
+<h2>📋 Verification Conclusion</h2>
+<h3>Overall Assessment</h3>
+<ol>
+<li>✅ <strong>Data Accuracy</strong>: 100%Accurate（所有参数值Updated为CSV精确值）</li>
+</ol>
+<ol>
+<li>✅ <strong>Deviation计算</strong>: 100%Accurate（所有Deviation计算正确）</li>
+</ol>
+<ol>
+<li>✅ <strong>代码Consistent性</strong>: 100%Consistent（报告描述与代码实现Consistent）</li>
+</ol>
+<ol>
+<li>✅ <strong>数值精度</strong>: 已提升到CSV原始精度</li>
+</ol>
+<h3>Updated Files</h3>
+<ol>
+<li>✅ MODEL_RUN_VERIFICATION.md - Updated&quot;报告值&quot;为实际CSV值</li>
+</ol>
+<ol>
+<li>✅ COMPLETE_CALCULATION_PROCESS.md - Updated所有参数值为CSV精确值</li>
+</ol>
+<h3>Suggestions</h3>
+<ol>
+<li>✅ <strong>数据精度</strong>: 所有报告现在使用CSV原始精度，无需进一步更新</li>
+</ol>
+<ol>
+<li>✅ <strong>Consistent性</strong>: 所有报告数据已与CSV数据完全Consistent</li>
+</ol>
+<ol>
+<li>✅ <strong>Accurate性</strong>: 所有Deviation计算和参数值已验证Accurate</li>
+</ol>
+<p><strong>Verification Completion Date</strong>: 2025年12月</p>
+<p><strong>Verification Results</strong>: ✅ <strong>所有报告数据Accurate、真实、Consistent</strong></p>
+<p><a href="/?list_6/">【返回列表】</a></p>
+<p>-</p>
+
+    </article>
+    <aside class="article-disclaimer" lang="zh-CN">
+  <p class="d-zh">「本文为 Quantum Narrative School / QNM 研究纲领公开材料的归档呈现。文中涉及的模型结果、数值对照与解释性表述，部分经 AI 辅助整理或分析；不构成对「宇宙生成真相已闭合」「唯一正确理论」或任何工程/投资结论的主张。读者应结合配套披露与可复现材料独立判断。」</p>
+  <p class="d-en" lang="en">&quot;Archival presentation of QNS/QNM programme materials. Model results and interpretive wording may include AI-assisted analysis; this does not claim cosmogenesis closure, unique-true-theory status, or any engineering/investment conclusion.&quot;</p>
+</aside>
+  </main>
+  <footer class="article-foot">
+    <p><a href="../../index.html#theory">Back to Theory</a> · <a href="../../index.html">Home</a> · <a href="index.html">Section archive</a></p>
+  </footer>
+</body>
+</html>

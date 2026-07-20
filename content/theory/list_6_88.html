@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QNM Data Authenticity &amp; Accuracy Audit Report — Quantum Narrative School</title>
+  <meta name="robots" content="noindex,follow">
+  <script src="../../js/guard.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/site.css">
+  <link rel="stylesheet" href="../../css/article.css">
+</head>
+<body class="article-page">
+  <a class="skip" href="#article-main">Skip to content</a>
+  <header class="article-top">
+    <a class="article-home" href="../../index.html">Quantum Narrative School</a>
+    <a class="article-back" href="../../index.html#theory">← Theory</a>
+  </header>
+  <main id="article-main" class="article-main">
+    <aside class="article-boundary" role="note">
+  <strong>Claim boundary</strong>
+  <p>Archival page · programme materials · not cosmogenesis closure · not unique-true-theory · not engineering/investment advice. Prefer machine-readable SSOT / honest-disclosure registers over rhetorical wording.</p>
+</aside>
+    <header class="article-header">
+      <p class="article-kicker">Theory</p>
+      <h1>QNM Data Authenticity &amp; Accuracy Audit Report</h1>
+      <time class="article-date" datetime="2025-12-18">2025-12-18</time>
+      <p class="article-source">Source: https://www.q-n-s.com/?list_6/88.html</p>
+    </header>
+    <article class="article-body">
+<p><strong>Scope:</strong> This audit is performed on the current Submission_Package only, using evidence from the following locations:</p>
+<ul>
+<li>06_Data_and_Scripts/ and its subdirectories (including Results)</li>
+</ul>
+<ul>
+<li>Top-level Results directory</li>
+</ul>
+<ul>
+<li>Formal reports under 01_Main_Paper and Documentation</li>
+</ul>
+<h2>1. Core Data Integrity</h2>
+<p>According to data_quality_check.py and its output data_quality_report.txt, the following CSV files were checked:</p>
+<ul>
+<li>06_Data_and_Scripts/baseline_cl.csv</li>
+</ul>
+<ul>
+<li>Rows: 2051, Columns: 2 (ell, C_ell_TT)</li>
+</ul>
+<ul>
+<li>Total missing values: 0</li>
+</ul>
+<ul>
+<li>Duplicate rows: 0</li>
+</ul>
+<ul>
+<li>06_Data_and_Scripts/baseline_pk.csv</li>
+</ul>
+<ul>
+<li>Rows: 300, Columns: 2 (k, P(k))</li>
+</ul>
+<ul>
+<li>Total missing values: 0</li>
+</ul>
+<ul>
+<li>Duplicate rows: 0</li>
+</ul>
+<ul>
+<li>06_Data_and_Scripts/qnm_parameter_fit_results.csv</li>
+</ul>
+<ul>
+<li>Rows: 189, Columns: 6 (blur_strength, mid1, mid2, alpha, global_rmse, mid_rmse)</li>
+</ul>
+<ul>
+<li>Total missing values: 0</li>
+</ul>
+<ul>
+<li>Duplicate rows: 0</li>
+</ul>
+<p><strong>Conclusion:</strong> All core CSV files mentioned in the paper are complete (no missing values, no duplicated rows), consistent with the textual claims in data_issues_and_suggestions.md and final_data_validation_report.md.</p>
+<h2>2. 3σ Outlier Analysis and Range Characteristics</h2>
+<p>Using data_quality_report.txt together with the newly executed analyze_outliers_and_params.py, 3σ outliers were re-counted and exported for inspection:</p>
+<ul>
+<li>baseline_cl.csv</li>
+</ul>
+<ul>
+<li>ell: 3σ outliers = 0</li>
+</ul>
+<ul>
+<li>C_ell_TT: 3σ outliers = <strong>38</strong></li>
+</ul>
+<ul>
+<li>Outlier details are stored in Results/cl_outliers_3sigma.csv, with multipoles in the range <strong>ℓ≈202–239</strong>, clustered near the first acoustic peak; the plot Results/cl_C_ell_TT_3sigma_outliers.png highlights these points.</li>
+</ul>
+<ul>
+<li>baseline_pk.csv</li>
+</ul>
+<ul>
+<li>k: 3σ outliers = <strong>11</strong></li>
+</ul>
+<ul>
+<li>P(k): 3σ outliers = 0</li>
+</ul>
+<ul>
+<li>Outlier details are stored in Results/pk_outliers_3sigma.csv, with wavenumbers in the range <strong>k≈1.4–2.0</strong>, i.e. at the high-k tail; the plot Results/pk_k_3sigma_outliers.png (log–log) highlights these points.</li>
+</ul>
+<ul>
+<li>All columns in qnm_parameter_fit_results.csv (blur_strength, mid1, mid2, alpha, global_rmse, mid_rmse) have zero 3σ outliers.</li>
+</ul>
+<p><strong>Conclusion:</strong> The statement “38 3σ outliers in C_ell_TT and 11 in k” is exactly confirmed by the automated checks; the newly exported CSVs and plots provide concrete ℓ/k ranges for physical interpretation and for inclusion in figures.</p>
+<h2>3. 7.91σ Result &amp; Reproducibility</h2>
+<h3>3.1 Consistency Between Script and Formal Reports</h3>
+<ul>
+<li>06_Data_and_Scripts/simple_zscore_validation.py is explicitly labeled as a <strong>“Z=7.91σ result validation script”</strong> and checks whether a 7.91σ-level event is reproduced.</li>
+</ul>
+<ul>
+<li>Formal documentation (Documentation/Theoretical_Comprehensive_Evaluation_Report_EN.<em> and 01_Main_Paper/The Nature of Reality The Quantum Narrative Matrix Hypothesis.</em>) reports, from 100 independent runs:</li>
+</ul>
+<ul>
+<li>Mean Z-score ≈ 2.63σ, standard deviation ≈ 1.96</li>
+</ul>
+<ul>
+<li>Maximum Z-score ≈ <strong>7.91σ</strong></li>
+</ul>
+<ul>
+<li>Runs with Z ≥ 6σ: about <strong>4%</strong> (4 out of 100)</li>
+</ul>
+<p>No script or result file in the submission package supports claims like “maximum Z≈13.6σ” or “60–90% high-Z events”. All Z-related prose has therefore been aligned to the 7.9σ / 4% figures, which are robustly documented in the formal materials.</p>
+<h3>3.2 Audit Conclusion</h3>
+<ul>
+<li>There exist statistically extreme events (maximum Z≈7.9σ) consistent with the theoretical narrative.</li>
+</ul>
+<ul>
+<li>In 100 independent runs, high-Z events (Z ≥ 6σ) are rare but reproducible (~4%), supporting statistical significance without overstating frequency.</li>
+</ul>
+<ul>
+<li>All these conclusions are drawn solely from scripts and documents within the submission package and are internally consistent.</li>
+</ul>
+<h2>4. CL/PK Baseline Comparison &amp; Systematic Bias</h2>
+<h3>4.1 CMB Cℓ (CL) Residuals</h3>
+<ul>
+<li>06_Data_and_Scripts/Results/qnm_bestfit_cl_comparison.csv compares baseline_cl and toy_cl_bestfit with a per-ℓ relative residual rel_residual.</li>
+</ul>
+<ul>
+<li>Across a wide range of multipoles ℓ, rel_residual stays around <strong>0.8</strong> (≈ 80% relative error), indicating a strong <strong>systematic bias</strong> rather than a few outlying points.</li>
+</ul>
+<ul>
+<li>06_Data_and_Scripts/Results/cl_metrics_summary.csv reports:which further confirms that the toy CL spectrum deviates substantially from the baseline CL.</li>
+</ul>
+<ul>
+<li>mean_rel ≈ 2.52 (range ≈ 1.77–3.62)</li>
+</ul>
+<ul>
+<li>rms_rel ≈ 27.6 (range ≈ 15–46)</li>
+</ul>
+<ul>
+<li>max_rel of several hundred</li>
+</ul>
+<p><strong>Conclusion:</strong> The claim that “toy_cl_bestfit shows ~80% relative residuals against baseline_cl, indicating a systematic bias” is quantitatively supported.</p>
+<h3>4.2 Matter Power Spectrum P(k)</h3>
+<ul>
+<li>06_Data_and_Scripts/Results/pk_metrics_summary.csv shows:</li>
+</ul>
+<ul>
+<li>mean_rel, median_rel, and rms_rel all ≈ <strong>0.999999999997</strong></li>
+</ul>
+<ul>
+<li>max_rel = 1.0</li>
+</ul>
+<p><strong>Conclusion:</strong> The toy P(k) matches the baseline P(k) almost perfectly; describing the correlation as “extremely high (≈1)” is fully justified.</p>
+<h2>5. Theoretical vs Empirical Parameter Differences</h2>
+<p>Using 06_Data_and_Scripts/Results/param_comparison_theoretical_vs_empirical.csv together with the recomputed Results/param_mismatch_summary.csv:</p>
+<ul>
+<li>amplitude: rel_diff_mean ≈ 0.83 → about <strong>83%</strong> relative difference; the mean-theory minus mean-empirical shift corresponds to roughly <strong>7.1σ</strong> in combined (theory+empirical) uncertainty.</li>
+</ul>
+<ul>
+<li>peak_ell: rel_diff_mean ≈ 0.91 → about <strong>91%</strong> relative difference; ≈<strong>24.0σ</strong> in combined uncertainty.</li>
+</ul>
+<ul>
+<li>tilt_ns: rel_diff_mean ≈ 124 → a discrepancy of more than two orders of magnitude; ≈<strong>54.6σ</strong> in combined uncertainty.</li>
+</ul>
+<ul>
+<li>Other parameters (turnover_k, damping_ell, peak_sigma, etc.) show moderate or smaller relative differences.</li>
+</ul>
+<p><strong>Conclusion:</strong> The statement that “parameters like amplitude, tilt_ns, and peak_ell show large discrepancies (some exceeding 80%) between theory and empirical fits” is exactly borne out by the CSV values, and the new param_mismatch_summary.csv quantifies how extreme these mismatches are in σ units.</p>
+<h2>6. Provenance &amp; Checksums</h2>
+<ul>
+<li>After running generate_checksums.py, the top-level checksums.txt now contains SHA256 hashes for the core data and key result CSVs, for example:</li>
+</ul>
+<ul>
+<li>baseline_cl.csv, baseline_pk.csv, qnm_parameter_fit_results.csv</li>
+</ul>
+<ul>
+<li>qnm_bestfit_cl_comparison.csv, cl_metrics_summary.csv, pk_metrics_summary.csv</li>
+</ul>
+<ul>
+<li>param_comparison_theoretical_vs_empirical.csv, param_distribution_summary.csv, and data-quality MD/TXT files.</li>
+</ul>
+<ul>
+<li>These checksums can be used to verify that the data have not been tampered with between submission and independent re-analysis, satisfying basic provenance requirements.</li>
+</ul>
+<h2>7. Overall Assessment &amp; Recommendations</h2>
+<h3>7.1 Overall Assessment</h3>
+<ul>
+<li>Core CSV data are structurally sound (no missing values, no duplicates).</li>
+</ul>
+<ul>
+<li>There are a limited number of significant 3σ outliers (in C_ell_TT and k), which have now been localised in ℓ/k space via exported CSVs and plots for physical interpretation.</li>
+</ul>
+<ul>
+<li>The 7.91σ result and its distribution over 100 runs (mean 2.63σ, ~4% above 6σ) are consistently documented across scripts and formal reports.</li>
+</ul>
+<ul>
+<li>The toy CL spectrum exhibits strong systematic bias relative to the baseline, whereas the toy P(k) spectrum agrees almost perfectly; key cosmological parameters show substantial and highly significant theory–data discrepancies.</li>
+</ul>
+<h3>7.2 Recommendations</h3>
+<ul>
+<li><strong>Outlier handling:</strong> Use cl_C_ell_TT_3sigma_outliers.png and pk_k_3sigma_outliers.png to highlight 3σ outliers directly in figures and discuss their physical meaning or numerical origin explicitly in the text.</li>
+</ul>
+<ul>
+<li><strong>Model and parameter refinement:</strong> Building on the numerical diagnostics, perform systematic sensitivity analyses and parameter scans for amplitude, tilt_ns, and peak_ell to distinguish toy-model limitations from correctable inconsistencies.</li>
+</ul>
+<ul>
+<li><strong>Data provenance:</strong> Maintain and extend the SHA256 list in checksums.txt as the project evolves, so that future changes can be precisely tracked.</li>
+</ul>
+<ul>
+<li><strong>External baselines:</strong> Continue using compute_cross_validation_vs_camb.py and compute_cross_validation_vs_class.py to produce RMSE/χ² statistics and plots for direct comparisons against Planck/CAMB/CLASS in the manuscript.</li>
+</ul>
+<h3>7.3 Implemented Technical Support (Scripts &amp; Outputs)</h3>
+<ul>
+<li><strong>Outlier visualisation helper:</strong> 06_Data_and_Scripts/analyze_outliers_and_params.py has been used to recompute 3σ outliers and export Results/cl_outliers_3sigma.csv and Results/pk_outliers_3sigma.csv plus the corresponding highlight plots.</li>
+</ul>
+<ul>
+<li><strong>Parameter-mismatch diagnostics:</strong> The same script generates Results/param_mismatch_summary.csv, providing σ-level quantification of theory–empirical mismatches for amplitude, tilt_ns, and peak_ell.</li>
+</ul>
+<ul>
+<li><strong>SHA256 checksum generation:</strong> 06_Data_and_Scripts/generate_checksums.py has produced a populated checksums.txt at the submission root, with SHA256 hashes for core data and key result files.</li>
+</ul>
+<ul>
+<li><strong>External-baseline comparison scripts:</strong> compute_cross_validation_vs_camb.py and compute_cross_validation_vs_class.py implement consistent RMSE/χ² statistics and write cross-validation outputs and plots under the relevant Results subdirectories, ready to be cited in the manuscript for CAMB/CLASS comparisons.</li>
+</ul>
+<p><a href="/?list_6/">【返回列表】</a></p>
+<p>-</p>
+
+    </article>
+    <aside class="article-disclaimer" lang="zh-CN">
+  <p class="d-zh">「本文为 Quantum Narrative School / QNM 研究纲领公开材料的归档呈现。文中涉及的模型结果、数值对照与解释性表述，部分经 AI 辅助整理或分析；不构成对「宇宙生成真相已闭合」「唯一正确理论」或任何工程/投资结论的主张。读者应结合配套披露与可复现材料独立判断。」</p>
+  <p class="d-en" lang="en">&quot;Archival presentation of QNS/QNM programme materials. Model results and interpretive wording may include AI-assisted analysis; this does not claim cosmogenesis closure, unique-true-theory status, or any engineering/investment conclusion.&quot;</p>
+</aside>
+  </main>
+  <footer class="article-foot">
+    <p><a href="../../index.html#theory">Back to Theory</a> · <a href="../../index.html">Home</a> · <a href="index.html">Section archive</a></p>
+  </footer>
+</body>
+</html>

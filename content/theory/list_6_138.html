@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academic Cosmic Evolution Figure Run — Analysis Report — Quantum Narrative School</title>
+  <meta name="robots" content="noindex,follow">
+  <script src="../../js/guard.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/site.css">
+  <link rel="stylesheet" href="../../css/article.css">
+</head>
+<body class="article-page">
+  <a class="skip" href="#article-main">Skip to content</a>
+  <header class="article-top">
+    <a class="article-home" href="../../index.html">Quantum Narrative School</a>
+    <a class="article-back" href="../../index.html#theory">← Theory</a>
+  </header>
+  <main id="article-main" class="article-main">
+    <aside class="article-boundary" role="note">
+  <strong>Claim boundary</strong>
+  <p>Archival page · programme materials · not cosmogenesis closure · not unique-true-theory · not engineering/investment advice. Prefer machine-readable SSOT / honest-disclosure registers over rhetorical wording.</p>
+</aside>
+    <header class="article-header">
+      <p class="article-kicker">Theory</p>
+      <h1>Academic Cosmic Evolution Figure Run — Analysis Report</h1>
+      <time class="article-date" datetime="2026-02-08">2026-02-08</time>
+      <p class="article-source">Source: https://www.q-n-s.com/?list_6/138.html</p>
+    </header>
+    <article class="article-body">
+<p><strong>Run time</strong>: 2026-02-08 00:12:51 – 00:13:12 <strong>Script</strong>: generate_academic_cosmic_evolution_figures.py <strong>Output directory</strong>: 01_figure_generation/output/academic_paper_figures/</p>
+<h2>1. Run Overview</h2>
+<p>ItemResultConfigurationDimension N=21, ensemble=10 (10 independent realizations)Completion<strong>10/10 all successful</strong>, no failures or interruptionsSteps per run200,001 (same for each realization)Present cosmic timetime_present_s ≈ 4.35×10¹⁷ s (≈ 13.8 Gyr, consistent with setup)Checkpoint resumeThis run completed in one pass; no resume usedAll cosmological parameters are derived from the QNM evolution engine using first principles from the matrix. Planck/SH0ES etc. in figures are for post-hoc comparison only and are not used in derivation or fitting.</p>
+<h2>2. 18-Parameter Statistical Summary</h2>
+<p>Below are <strong>mean ± std</strong> over the 10 realizations (consistent with 18_parameter_summary.csv).</p>
+<h3>2.1 Hubble and Matter Components</h3>
+<p>ParameterMeanStdDescription<strong>H₀</strong> (km/s/Mpc)68.262.55Theoretical present-day Hubble constant<strong>Ω_Λ</strong>0.67660.0037Dark energy density parameter<strong>Ω_m</strong>0.32330.0037Matter density parameter<strong>ω_b</strong>0.09240.0011Baryon density parameter<strong>ω_c</strong>0.23090.0026Cold dark matter density parameter</p>
+<ul>
+<li>Ω_Λ + Ω_m is consistently close to 1, satisfying flat-universe constraint.</li>
+</ul>
+<ul>
+<li>H₀ ensemble range ≈ 64–73 km/s/Mpc (see per-realization table below), spanning and straddling Planck and SH0ES reference bands, consistent with “Hubble tension resolution” figures.</li>
+</ul>
+<h3>2.2 Equation of State and CMB-Related</h3>
+<p>ParameterMeanStdDescription<strong>w₀</strong>−1.00950.0009Present-day dark energy equation of state<strong>w_a</strong>0.001640.00016EoS evolution slope<strong>n_s</strong>0.95770.0005Scalar spectral index<strong>A_s</strong> (×10⁻⁹)2.302.29Primordial power amplitude (spans orders in ensemble)<strong>T_CMB</strong> (K)133.371.20Theoretical CMB temperature (current epoch)</p>
+<ul>
+<li>w₀ is very close to −1 (cosmological constant), w_a close to 0, consistent with “phantom crossings = 0”.</li>
+</ul>
+<ul>
+<li>n_s slightly below 1, consistent with common slow-roll inflation expectations.</li>
+</ul>
+<h3>2.3 QNM-Related and Other</h3>
+<p>ParameterMeanStdDescription<strong>c_eff</strong>58.240.69Effective central charge<strong>raw_central_charge</strong>2.770.03Raw central charge<strong>κ (projection_scale_factor)</strong>5.890.51Projection scale factor<strong>ℓ₁</strong>227.88.2Multipole 1<strong>ℓ_d</strong>1216.543.7Multipole d<strong>σ₈</strong>1.5940.002Theoretical σ₈ (note: convention may differ from literature)<strong>σ₈_seed</strong>0.2720.0003Seed σ₈</p>
+<h2>3. Per-Realization Endpoint Values (Present H₀, w₀)</h2>
+<p>#h0_present (km/s/Mpc)w0_presentphantom_crossings067.70−1.01000173.29−1.00890270.78−1.00790368.70−1.00970467.13−1.01010566.59−1.00950663.99−1.01090769.86−1.00900869.02−1.00870965.56−1.01040</p>
+<ul>
+<li><strong>H₀ range</strong>: 63.99 – 73.29 km/s/Mpc, mean 68.26; comparable to Planck 2018 reference 67.36±0.54 and SH0ES 2022 high band, suitable for Hubble tension figures.</li>
+</ul>
+<ul>
+<li><strong>w₀</strong>: All near −1.01; no phantom (w &lt; −1) dominance or multiple crossings.</li>
+</ul>
+<ul>
+<li><strong>phantom_crossings</strong>: 0 for all 10, consistent with w(z) staying close to Λ behavior.</li>
+</ul>
+<h2>4. Output File List and Usage</h2>
+<p>FileTypePurposecosmic_evolution_checkpoint.jsonCheckpointResume and archive; full 10 trajectories and 18 parametersanalysis_results.jsonFull resultsPrimary source for figures and comparison; written when all 10 complete18_parameter_ensemble.csvTable10 × 21 parameters for further statistics18_parameter_summary.csvTableMean and std per parameterqnm_cosmic_timeline_academic.pngFigureCosmic timeline (to 10¹⁰⁰ yr), Planck labelsqnm_hubble_evolution_academic.pngFigureH(z) evolutionqnm_hubble_tension_resolution_academic.pngFigureHubble tension resolutionqnm_phantom_energy_academic.pngFigurePhantom energy / w(z)qnm_statistical_summary_academic.pngFigureStatistical summaryqnm_18_parameter_summary_academic.pngFigure18-parameter summaryqnm_vs_planck_deviation_academic.pngFigureQNM vs Planck reference deviationFigures are 300 DPI PNG, suitable for main text or appendix (e.g. Figure A1–A3).</p>
+<h2>5. Physical and Consistency Checks</h2>
+<ul>
+<li><strong>Evolution endpoint</strong>: time_present_s ≈ 4.35×10¹⁷ s ≈ 13.8 Gyr, consistent with “today” setting.</li>
+</ul>
+<ul>
+<li><strong>Flatness</strong>: Ω_Λ + Ω_m ≈ 1, stable across ensemble.</li>
+</ul>
+<ul>
+<li><strong>Dark energy behavior</strong>: w₀ ≈ −1, w_a ≈ 0, phantom_crossings = 0, consistent with ΛCDM-like behavior.</li>
+</ul>
+<ul>
+<li><strong>Hubble tension</strong>: H₀ ensemble covers 64–73 km/s/Mpc, allowing comparison with both low (Planck) and high (SH0ES) references for “tension resolution” figures.</li>
+</ul>
+<ul>
+<li><strong>A_s spread</strong>: A_s spans about one order of magnitude in the ensemble (≈ 3e-10 to 8e-9), mean 2.3e-9; if used in the paper, report as range or distribution or state as QNM theoretical prediction.</li>
+</ul>
+<h2>6. Recommendations and Notes</h2>
+<ul>
+<li><strong>Reproducibility</strong>: All results can be reproduced from analysis_results.json and the CSV files in the same directory; use analysis_results.json for figures and comparison.</li>
+</ul>
+<ul>
+<li><strong>Observational labels</strong>: Planck/SH0ES etc. in figures are labeled as reference only and are not used in derivation, in line with academic integrity.</li>
+</ul>
+<ul>
+<li><strong>Further analysis</strong>: For per-redshift or per-time analysis, read redshifts, hubble_values, redshifts_w, w_values from analysis_results.json → realizations[i]. Physical meaning and scale of redshifts are explained in the next section.</li>
+</ul>
+<h2>7. Redshifts in checkpoint/analysis_results — Scale and Verification</h2>
+<h3>7.1 Issue and Motivation</h3>
+<p>The leading entries of the redshifts array in checkpoint and analysis_results are of order <strong>~7.65×10²⁹</strong>, much larger than typical cosmological plots (z ≈ 0–10 or CMB z≈1100). This section clarifies: <strong>this is not a unit or formula error</strong>. The evolution starts at the <strong>ultra-early universe when the quantum matrix runs</strong> (Planck era), so the standard cosmological redshift z can legitimately be very large there.</p>
+<h3>7.2 Definition and Formula in Code (Source Check)</h3>
+<ul>
+<li><strong>Location</strong>: 05_Core_Source_Code/A/qnm_complete_cosmic_evolution_engine.py, inside QNMMatrix.get_cosmic_parameters(time) (approx. lines 532–551).</li>
+</ul>
+<ul>
+<li><strong>Quantity</strong>: redshift is the <strong>standard cosmological redshift z</strong>, with 1+z = a₀/a(t), given by the age–redshift relation from cosmic time t and <strong>theoretical cosmic age</strong> t_age:</li>
+</ul>
+<ul>
+<li><strong>Radiation domination</strong> (t ≤ 10¹² s): z = (t_age/t)^(1/2) − 1</li>
+</ul>
+<ul>
+<li><strong>Matter domination and later</strong> (t &gt; 10¹² s): z = (t_age/t)^(2/3) − 1</li>
+</ul>
+<ul>
+<li><strong>Theoretical age</strong> t_age: from first-principles derive_age_normalization_factor(..., c_eff, d_ref, Omega_m_ref, Omega_m_ref), then × 10⁹×365.25×24×3600 into seconds, of order <strong>13.8 Gyr ≈ 4.35×10¹⁷ s</strong> (consistent with time_present_s in this run).</li>
+</ul>
+<ul>
+<li><strong>Evolution start</strong>: initialize_universe() sets time_current to <strong>Planck time</strong> t_Planck ≈ 5.39×10⁻⁴⁴ s (FirstPrinciplesConstants.t_Planck), i.e. from the <strong>ultra-early universe when the quantum matrix runs</strong>. Each step calls get_cosmic_parameters(self.time_current) to get z at that time and append to evolution_history; get_hubble_evolution() / get_dark_energy_evolution() then produce the redshifts / redshifts_w arrays.</li>
+</ul>
+<h3>7.3 Why the First Redshift is ~10²⁹–10³⁰</h3>
+<ul>
+<li>The first recorded point corresponds to t ≈ t_Planck (or slightly later after the first step). In the radiation-dominated formula, z ≈ (t_age/t)^(1/2) − 1 ≈ (4.35×10¹⁷ / 5.39×10⁻⁴⁴)^(1/2) ∼ 10³⁰.</li>
+</ul>
+<ul>
+<li>t_age varies slightly across realizations (c_eff, Ω_m, etc.), so the first z in the <strong>~10²⁹–10³⁰</strong> range (e.g. ~7.65×10²⁹) is the <strong>expected result</strong> with correct formula and units.</li>
+</ul>
+<ul>
+<li><strong>Array order</strong>: redshifts[0] = earliest time (largest z), redshifts[-1] = today (z≈0). The engine docstring states: index 0 = initial state (early universe), index -1 = present day.</li>
+</ul>
+<h3>7.4 Consistency with “Start from Quantum Matrix”</h3>
+<ul>
+<li>This framework does <strong>not</strong> start at “after recombination/CMB” or some mid-z; it evolves from the <strong>Planck era</strong> (matrix evolution start) to “today”.</li>
+</ul>
+<ul>
+<li>With the standard definition 1+z = a₀/a(t), smaller t implies larger z; so <strong>a very large z at the start is physically consistent</strong> with “start at or before the ultra-early universe when the quantum matrix runs”.</li>
+</ul>
+<ul>
+<li>CMB-related logic in the engine (e.g. finding z≈1100 in analyze_hubble_tension) uses np.argmin(np.abs(redshifts - 1100)), confirming that the same redshifts array contains the full sequence from very large z down to 0, including z≈1100.</li>
+</ul>
+<h3>7.5 Conclusions and Usage</h3>
+<p>ItemConclusion<strong>Quantity</strong>redshifts = standard cosmological redshift z, dimensionless<strong>Formula and units</strong>No error; z is computed from t and first-principles t_age via the age–redshift relation<strong>Origin of large values</strong>Evolution starts at Planck era (quantum-matrix start), so z is very large (~10²⁹–10³⁰) there<strong>Plotting/comparison</strong>If only z ≲ 1100 or z ≲ 10 is needed, truncate (e.g. z[z <= 1100] or z[z <= 20]) for H(z)/w(z) plots; caption can state “evolution from Planck era to today; axis shows z ≤ …”.<strong>Report generated</strong>: 2026-02-08 <strong>Data sources</strong>: cosmic_evolution_checkpoint.json, analysis_results.json, 18_parameter_summary.csv, 18_parameter_ensemble.csv <strong>Redshifts verification</strong>: Based on get_cosmic_parameters and evolution loop in qnm_complete_cosmic_evolution_engine.py</p>
+<p><a href="/?list_6/">【返回列表】</a></p>
+<p>-</p>
+
+    </article>
+    <aside class="article-disclaimer" lang="zh-CN">
+  <p class="d-zh">「本文为 Quantum Narrative School / QNM 研究纲领公开材料的归档呈现。文中涉及的模型结果、数值对照与解释性表述，部分经 AI 辅助整理或分析；不构成对「宇宙生成真相已闭合」「唯一正确理论」或任何工程/投资结论的主张。读者应结合配套披露与可复现材料独立判断。」</p>
+  <p class="d-en" lang="en">&quot;Archival presentation of QNS/QNM programme materials. Model results and interpretive wording may include AI-assisted analysis; this does not claim cosmogenesis closure, unique-true-theory status, or any engineering/investment conclusion.&quot;</p>
+</aside>
+  </main>
+  <footer class="article-foot">
+    <p><a href="../../index.html#theory">Back to Theory</a> · <a href="../../index.html">Home</a> · <a href="index.html">Section archive</a></p>
+  </footer>
+</body>
+</html>

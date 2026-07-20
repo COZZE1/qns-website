@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progress Report — Quantum Narrative School</title>
+  <meta name="robots" content="noindex,follow">
+  <script src="../../js/guard.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/site.css">
+  <link rel="stylesheet" href="../../css/article.css">
+</head>
+<body class="article-page">
+  <a class="skip" href="#article-main">Skip to content</a>
+  <header class="article-top">
+    <a class="article-home" href="../../index.html">Quantum Narrative School</a>
+    <a class="article-back" href="../../index.html#theory">← Theory</a>
+  </header>
+  <main id="article-main" class="article-main">
+    <aside class="article-boundary" role="note">
+  <strong>Claim boundary</strong>
+  <p>Archival page · programme materials · not cosmogenesis closure · not unique-true-theory · not engineering/investment advice. Prefer machine-readable SSOT / honest-disclosure registers over rhetorical wording.</p>
+</aside>
+    <header class="article-header">
+      <p class="article-kicker">Theory</p>
+      <h1>Progress Report</h1>
+      <time class="article-date" datetime="2025-12-15">2025-12-15</time>
+      <p class="article-source">Source: https://www.q-n-s.com/?list_6/76.html</p>
+    </header>
+    <article class="article-body">
+<p>Quantum Narrative Matrix Theory - Quantum Gravity Correction Extension</p>
+<p>Completion: 30% → 50% (+20%)</p>
+<h2>Overall Progress</h2>
+<p>30%</p>
+<p>Initial Completion</p>
+<p>50%</p>
+<p>Current Completion</p>
+<p>+20%</p>
+<p>Progress Increase</p>
+<p>12/12</p>
+<p>Tests Passed</p>
+<p>550+</p>
+<p>Lines of Code</p>
+<p>8</p>
+<p>New Methods</p>
+<h2>Key Parameters</h2>
+<h4>Basic Parameters</h4>
+<p>Planck Length (l_P):1.0</p>
+<p>Base Coupling Strength (alpha):1.0 (default)</p>
+<p>l_P² Term Coefficient:α * l_P²</p>
+<h4>Higher-Order Correction Parameters</h4>
+<p>l_P⁴ Coupling Strength (beta):0.01 (default)</p>
+<p>l_P⁶ Coupling Strength (gamma):0.001 (default)</p>
+<p>l_P⁴ Term Formula:β <em> l_P⁴ </em> R²</p>
+<p>l_P⁶ Term Formula:γ <em> l_P⁶ </em> R³</p>
+<h4>Discrete Spacetime Parameters</h4>
+<p>Lattice Spacing (lattice_spacing):1.0 (equals l_P)</p>
+<p>Discrete Effects Enabled:True (default)</p>
+<h4>Numerical Stability Parameters</h4>
+<p>Finite Difference Step (epsilon):1e-6</p>
+<p>Metric Regularization (regularization):0.01</p>
+<p>Max Curvature Limit (max_curvature):1e6</p>
+<p>Min Metric Eigenvalue (min_metric_eigenval):0.1</p>
+<h4>Complete Correction Formula</h4>
+<p>H_QG = H + α<em>l_P²</em>R + β<em>l_P⁴</em>R² + γ<em>l_P⁶</em>R³ + discrete_effects where: - H: Base Hamiltonian matrix - R: Ricci scalar (obtained through complete curvature calculation) - discrete_effects: Discrete spacetime effect term</p>
+<h2>Implemented Methods</h2>
+<h3>Curvature Calculation Toolchain</h3>
+<p>Method NameFunctionInputOutputderive_metric_tensor_from_hamiltonian()Derive metric tensor from HamiltonianH (n×n matrix)g_μν (n×n metric tensor)compute_christoffel_symbols()Compute Christoffel symbolsmetric (metric tensor)Γ^λ_μν (n×n×n array)compute_riemann_tensor()Compute Riemann curvature tensormetric, christoffelR^ρ_σμν (n×n×n×n array)compute_ricci_tensor()Compute Ricci tensorriemann, metricR_μν (n×n matrix)compute_ricci_scalar_from_hamiltonian()Compute Ricci scalar from HamiltonianH (n×n matrix)R (scalar)</p>
+<h3>Planck Scale Effect Methods</h3>
+<p>Method NameFunctionInputOutputapply_quantum_gravity_correction()Apply complete quantum gravity correctionH, spacetime_curvature (optional)H_QG (corrected Hamiltonian)_compute_discrete_spacetime_effects()Compute discrete spacetime effectsH (n×n matrix)discrete_correction (n×n matrix)compute_planck_scale_diagnostics()Planck scale diagnostic analysisH (n×n matrix)Diagnostics dictionary (20+ metrics)compare_with_observational_data()Compare with observational dataH, observational_params (optional)Comparison result dictionary</p>
+<h2>Test Details</h2>
+<h4>Week 1-2 Test Suite</h4>
+<p><strong>Test File:</strong> test_quantum_gravity_curvature.py</p>
+<p>test_metric_derivation()</p>
+<p>Test metric tensor derivation functionality</p>
+<p>Verifies: shape, Hermitian property, positive definiteness, condition number</p>
+<p>test_christoffel_symbols()</p>
+<p>Test Christoffel symbols computation</p>
+<p>Verifies: shape (n×n×n), numerical stability</p>
+<p>test_riemann_tensor()</p>
+<p>Test Riemann curvature tensor computation</p>
+<p>Verifies: shape (n×n×n×n), computation completeness</p>
+<p>test_ricci_scalar()</p>
+<p>Test complete Ricci scalar computation</p>
+<p>Test scales: n=5, 10, 15 | Verifies: finiteness, value range</p>
+<p>test_quantum_gravity_correction()</p>
+<p>Test complete quantum gravity correction</p>
+<p>Verifies: Hermitian property, correction magnitude</p>
+<p>test_numerical_stability()</p>
+<p>Test numerical stability</p>
+<p>Tests: small matrix (n=3), large matrix (n=20), near-singular matrix</p>
+<h4>Week 3-4 Test Suite</h4>
+<p><strong>Test File:</strong> test_planck_scale_effects.py</p>
+<p>test_higher_order_corrections()</p>
+<p>Test higher-order corrections (l_P^4, l_P^6)</p>
+<p>Verifies: l_P⁴ term, l_P⁶ term, superposition with base correction</p>
+<p>test_discrete_spacetime_effects()</p>
+<p>Test discrete spacetime effects</p>
+<p>Verifies: Hermitian property, relative correction magnitude (~2%)</p>
+<p>test_planck_scale_diagnostics()</p>
+<p>Test Planck scale diagnostic tools</p>
+<p>Verifies: 20+ diagnostic metrics, QG regime classification, dominant effect identification</p>
+<p>test_observational_comparison()</p>
+<p>Test observational data comparison functionality</p>
+<p>Verifies: curvature constraints, discrete effects bounds, consistency score</p>
+<p>test_parameter_control()</p>
+<p>Test extended parameter control</p>
+<p>Verifies: alpha, beta, gamma, include_higher_order, discrete_spacetime_enabled</p>
+<p>test_integration()</p>
+<p>Test complete integration</p>
+<p>Test scales: n=5, 10, 15 | Verifies: all features integrated</p>
+<p>Test SummaryResultTotal Tests12 testsPassed Tests12 (100%)Test Files2 test suitesTest CoverageAll core featuresNumerical StabilityVerified (small/large/boundary cases)</p>
+<h2>Key Achievements</h2>
+<h3>Technical Implementation</h3>
+<p>CategoryContentStatus<strong>Curvature Calculation</strong>Complete differential geometry toolchain: H → g_μν → Γ → R^ρ<em>σμν → R</em>μν → RComplete<strong>Higher-Order Corrections</strong>l_P⁴ term (β<em>l_P⁴</em>R²) and l_P⁶ term (γ<em>l_P⁶</em>R³)Complete<strong>Discrete Spacetime</strong>Lattice regularization, lattice spacing correction, quantum fluctuation effectsComplete<strong>Diagnostic Tools</strong>20+ diagnostic metrics, QG regime classification, dominant effect identificationComplete<strong>Observational Comparison</strong>Curvature constraint checking, discrete effects bounds, consistency scoring systemComplete</p>
+<h3>Code Quality</h3>
+<p>MetricValueCode Errors0Test Pass Rate100%Numerical StabilityExcellentDocumentation CompletenessComplete</p>
+<h2>Completion Progress</h2>
+<p>StageCompletionMain AchievementsTest Status<strong>Initial State</strong>30%Basic framework, simplified curvature approximationBasic tests<strong>After Week 1-2</strong>40% (+10%)Complete curvature calculation toolchain6/6 passed<strong>After Week 3-4</strong><strong>50% (+10%)</strong>Planck scale effects extension6/6 passed</p>
+<h2>Deliverables</h2>
+<h3>Code Files</h3>
+<p>File PathVersionLines of CodeStatus05_Core_Source_Code/quantum_gravity_correction.py0.5~550 lines addedComplete</p>
+<h3>Test Files</h3>
+<p>Test FileNumber of TestsPass RateStatus06_Data_and_Scripts/test_quantum_gravity_curvature.py6 tests100%Passed06_Data_and_Scripts/test_planck_scale_effects.py6 tests100%Passed<strong>Project:</strong> Quantum Narrative Matrix Theory - Quantum Gravity Correction Extension</p>
+<p><a href="/?list_6/">【返回列表】</a></p>
+<p>-</p>
+
+    </article>
+    <aside class="article-disclaimer" lang="zh-CN">
+  <p class="d-zh">「本文为 Quantum Narrative School / QNM 研究纲领公开材料的归档呈现。文中涉及的模型结果、数值对照与解释性表述，部分经 AI 辅助整理或分析；不构成对「宇宙生成真相已闭合」「唯一正确理论」或任何工程/投资结论的主张。读者应结合配套披露与可复现材料独立判断。」</p>
+  <p class="d-en" lang="en">&quot;Archival presentation of QNS/QNM programme materials. Model results and interpretive wording may include AI-assisted analysis; this does not claim cosmogenesis closure, unique-true-theory status, or any engineering/investment conclusion.&quot;</p>
+</aside>
+  </main>
+  <footer class="article-foot">
+    <p><a href="../../index.html#theory">Back to Theory</a> · <a href="../../index.html">Home</a> · <a href="index.html">Section archive</a></p>
+  </footer>
+</body>
+</html>

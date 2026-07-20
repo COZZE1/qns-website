@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QNM Model Parameter Derivation Status — Comprehensive Analysis — Quantum Narrative School</title>
+  <meta name="robots" content="noindex,follow">
+  <script src="../../js/guard.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/site.css">
+  <link rel="stylesheet" href="../../css/article.css">
+</head>
+<body class="article-page">
+  <a class="skip" href="#article-main">Skip to content</a>
+  <header class="article-top">
+    <a class="article-home" href="../../index.html">Quantum Narrative School</a>
+    <a class="article-back" href="../../index.html#theory">← Theory</a>
+  </header>
+  <main id="article-main" class="article-main">
+    <aside class="article-boundary" role="note">
+  <strong>Claim boundary</strong>
+  <p>Archival page · programme materials · not cosmogenesis closure · not unique-true-theory · not engineering/investment advice. Prefer machine-readable SSOT / honest-disclosure registers over rhetorical wording.</p>
+</aside>
+    <header class="article-header">
+      <p class="article-kicker">Theory</p>
+      <h1>QNM Model Parameter Derivation Status — Comprehensive Analysis</h1>
+      <time class="article-date" datetime="2025-12-21">2025-12-21</time>
+      <p class="article-source">Source: https://www.q-n-s.com/?list_6/93.html</p>
+    </header>
+    <article class="article-body">
+<p><strong>Analysis date:</strong> December 2025</p>
+<p><strong>Based on:</strong> Parameter Derivation Method Classification (Corrected) report and code review</p>
+<h2>Parameter Classification Verification</h2>
+<p>ParameterReport ClassificationCode VerificationAccuracyNotes<strong>n_s</strong>Theoretical Derivation✓ Confirmed✓ AccurateFully theoretical, no empirical coefficients<strong>A_s</strong>Theoretical + Numerical Optimization✓ Confirmed✓ AccurateCore entropy formula + optimized α=3.73<strong>ell_1</strong>Heuristic Mapping (core-based)✓ Confirmed✓ AccurateCore-region mapping; normalization contains hard-coded factor<strong>ell_d</strong>Heuristic Mapping (core-based)✓ Confirmed✓ AccurateBased on ell_1 and core features; heuristic scaling<strong>Omega_m</strong>Theoretical + Empirical Coefficients✓ Confirmed⚠️ Partially accurateCFT-based but base_value=0.3 is hard-coded<strong>H_0</strong>Heuristic Mapping✓ Confirmed✓ AccurateAge-heuristic formula with several empirical coefficients<strong>w_0</strong>Heuristic Mapping + Empirical Coefficients✓ Confirmed✓ AccurateBase -1 with empirical corrections 0.04, 0.02<strong>w_a</strong>Heuristic Mapping + Empirical Coefficients (partial core-based)✓ Confirmed⚠️ Partially accurateNormalization factor 22.0 is hard-coded</p>
+<h2>Detailed Parameter Analysis</h2>
+<h3>1. n_s (spectral index) — Fully theoretical</h3>
+<p><strong>Report classification:</strong> Theoretical Derivation</p>
+<p><strong>Code location:</strong> derive_spectral_index_core_based()</p>
+<pre><code>Derivation chain:
+Ryu-Takayanagi formula → c_raw = 3 × slope
+CFT additivity → c_eff = c_raw × n
+CFT central charge formula → n_s = 1 - 2/c_eff</code></pre>
+<p><strong>Theoretical purity:</strong> 100% — no hard-coded empirical fits; deviation -0.51%</p>
+<h3>2. A_s (power spectrum amplitude) — Theory + numerical optimization</h3>
+<p><strong>Report classification:</strong> Theoretical + Numerical Optimization</p>
+<p><strong>Code location:</strong> derive_power_amplitude()</p>
+<pre><code>Method:
+core entropy density → core_concentration
+structure density → structure_density
+exponential decay → A_s = exp(-α × core_concentration × structure_density) × normalization</code></pre>
+<p><strong>Theoretical purity:</strong> ~70% — α = 3.73 is obtained by numerical optimization; deviation -0.4%</p>
+<h3>3. ell_1 (first acoustic peak) — Heuristic mapping (core-based)</h3>
+<p><strong>Report classification:</strong> Heuristic Mapping (core-based)</p>
+<p><strong>Code location:</strong> derive_acoustic_peak_core_based()</p>
+<pre><code>Method highlights:
+core_relative_size, structure_density correction, geometric_correction, projection_factor
+normalization = π × effective_dimension × 10.0  (10.0 is hard-coded)</code></pre>
+<p><strong>Theoretical purity:</strong> ~60% — contains hard-coded normalization 10.0; deviation +23%</p>
+<h3>4. ell_d (damping scale) — Heuristic mapping (core-based)</h3>
+<p><strong>Report classification:</strong> Heuristic Mapping (core-based)</p>
+<p><strong>Code location:</strong> derive_damping_scale_core_based()</p>
+<pre><code>Method highlights:
+based on ell_1; damping_strength = exp(structure_density); diffusion_factor; normalization tries to unify</code></pre>
+<p><strong>Theoretical purity:</strong> ~50%; deviation +11%</p>
+<h3>5. Omega_m (matter density) — Theory + empirical coefficients</h3>
+<p><strong>Report classification:</strong> Theoretical + Empirical Coefficients</p>
+<p><strong>Code location:</strong> derive_matter_density_core_based()</p>
+<pre><code>Method:
+CFT relation → omega_m_cft = 18.0 / c_eff
+compression_factor, core_correction_coeff, structure_correction_coeff, projection_scale_ref
+Note: base_value=0.3 and projection_scale_ref=5.0 are hard-coded/empirical.</code></pre>
+<p><strong>Theoretical purity:</strong> ~65%; deviation +31%</p>
+<h3>6. H_0 (Hubble constant) — Heuristic mapping</h3>
+<p><strong>Report classification:</strong> Heuristic Mapping</p>
+<p><strong>Code location:</strong> derive_hubble_constant()</p>
+<pre><code>Method highlights:
+matrix trace/norm → age_proxy; spectral radius → stability_proxy
+t_cosmic = 10.0 + 10.0 × age_factor; H_0 = 978.0 / (t_cosmic × age_correction)
+Many hard-coded numbers in the age estimate.</code></pre>
+<p><strong>Theoretical purity:</strong> ~40%; deviation +1.02%</p>
+<h3>7. w_0 (dark energy equation of state) — Heuristic + empirical</h3>
+<p><strong>Report classification:</strong> Heuristic Mapping + Empirical Coefficients</p>
+<p><strong>Code location:</strong> derive_dark_energy_parameters()</p>
+<pre><code>Method:
+w_0_base = -1.0
+w_0 = -1.0 - 0.04 × activity × projection - 0.02 × H_0_deviation
+0.04, 0.02 and projection scale factor 10.0 are empirical.</code></pre>
+<p><strong>Theoretical purity:</strong> ~50%; deviation -2.55%</p>
+<h3>8. w_a (dark energy evolution) — Heuristic + empirical (partial core-based)</h3>
+<p><strong>Report classification:</strong> Heuristic Mapping + Empirical Coefficients (partial core-based)</p>
+<p><strong>Code location:</strong> derive_dark_energy_parameters()</p>
+<pre><code>Method highlights:
+core_suppression = 1/(1+core_concentration)
+structure_suppression = 1/(1+structure_density)
+base_coefficient = log(c_eff_normalized + 1)/log(22.0)  (22.0 hard-coded)</code></pre>
+<p><strong>Theoretical purity:</strong> ~55%; non-zero deviation (observationally near 0)</p>
+<h2>Overall Model Assessment</h2>
+<p>ParameterTheoretical purityDeviationStatusn_s100%-0.51%ExcellentA_s70%-0.4%Excellentell_160%+23%Acceptableell_d50%+11%GoodOmega_m65%+31%Needs optimizationH_040%+1.02%Excellentw_050%-2.55%Goodw_a55%non-zeroNeeds optimization<strong>Average theoretical purity:</strong> 61.25%   <strong>Average deviation:</strong> ~10%</p>
+<h2>Key Findings</h2>
+<h3>Strengths</h3>
+<ul>
+<li>n_s is fully first-principles derived with minimal deviation.</li>
+</ul>
+<ul>
+<li>Core-feature framework (core concentration, structure density) is coherent.</li>
+</ul>
+<ul>
+<li>Unified derivation attempts to reduce hard-coding.</li>
+</ul>
+<ul>
+<li>No clipping of physical values; theoretical transparency preserved.</li>
+</ul>
+<ul>
+<li>Most parameters have acceptable deviations.</li>
+</ul>
+<h3>Issues</h3>
+<ul>
+<li>Residual hard-coded constants: base_value=0.3, 10.0, 5.0, 22.0, α=3.73.</li>
+</ul>
+<ul>
+<li>Several mappings are heuristic: core→acoustic scale, matrix features→cosmic age, damping relations.</li>
+</ul>
+<ul>
+<li>Empirical coefficients in H_0, w_0, w_a need principled derivation or uncertainty quantification.</li>
+</ul>
+<h2>Conclusion</h2>
+<p>The model shows a partially complete theoretical basis (average purity ~61.25%). One parameter (n_s) is fully first-principles derived; the other parameters include heuristic mappings or empirical coefficients that should be further derived or optimized. Overall accuracy is acceptable, but several normalization and scaling constants should be replaced with derived or data-constrained values.</p>
+<p><strong>Report generated:</strong> December 2025</p>
+<p><strong>Sources:</strong> Parameter Derivation Method Classification (Corrected) + code review</p>
+<p><strong>If you find any errors in the data, please let me know, and I will correct them. Thank you!!</strong></p>
+<p><strong>Wishing you a happy holiday! </strong></p>
+<p><strong>Despite being the only one handling a heavy workload, thank you for your understanding.</strong></p>
+<p>MA, N. (2025). The Nature of Reality: The Quantum Narrative Matrix Hypothesis. Zenodo. <a href="https://doi.org/10.5281/zenodo.18005343" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.18005343</a></p>
+<p><a href="/?list_6/">【返回列表】</a></p>
+<p>-</p>
+
+    </article>
+    <aside class="article-disclaimer" lang="zh-CN">
+  <p class="d-zh">「本文为 Quantum Narrative School / QNM 研究纲领公开材料的归档呈现。文中涉及的模型结果、数值对照与解释性表述，部分经 AI 辅助整理或分析；不构成对「宇宙生成真相已闭合」「唯一正确理论」或任何工程/投资结论的主张。读者应结合配套披露与可复现材料独立判断。」</p>
+  <p class="d-en" lang="en">&quot;Archival presentation of QNS/QNM programme materials. Model results and interpretive wording may include AI-assisted analysis; this does not claim cosmogenesis closure, unique-true-theory status, or any engineering/investment conclusion.&quot;</p>
+</aside>
+  </main>
+  <footer class="article-foot">
+    <p><a href="../../index.html#theory">Back to Theory</a> · <a href="../../index.html">Home</a> · <a href="index.html">Section archive</a></p>
+  </footer>
+</body>
+</html>
