@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 432" role="img" aria-label="Quantum Narrative School emblem">
+  <defs>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g class="mark-stage" transform="translate(210 200)">
+    <!-- Larger equilateral triangles (circumradius ~148) -->
+    <g class="tri-spin tri-a" filter="url(#softGlow)">
+      <polygon class="tri-stroke" points="0,-148 128.17,74 -128.17,74"/>
+    </g>
+    <g class="tri-spin tri-b" filter="url(#softGlow)">
+      <polygon class="tri-stroke" points="0,-148 128.17,74 -128.17,74"/>
+    </g>
+    <g class="tri-spin tri-c" filter="url(#softGlow)">
+      <polygon class="tri-stroke" points="0,-148 128.17,74 -128.17,74"/>
+    </g>
+
+  </g>
+
+  <text class="mark-copy" x="210" y="420" text-anchor="middle">&#169; 2025 Nanjie Ma. All rights reserved.</text>
+</svg>

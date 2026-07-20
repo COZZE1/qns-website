@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 400" role="img" aria-label="Quantum Narrative School emblem">
+  <defs>
+    <style>
+      svg { background: transparent; }
+      .tri { fill: none; stroke: #f5f4f1; stroke-width: 1.35; stroke-linejoin: miter; }
+      .v-label {
+        fill: rgba(245, 244, 241, 0.92);
+        font-family: "EB Garamond", "Times New Roman", serif;
+        font-size: 17px;
+      }
+      .v-label.small {
+        fill: rgba(245, 244, 241, 0.84);
+        font-size: 12px;
+      }
+      .core-label {
+        fill: #c8a45a;
+        font-family: "EB Garamond", "Times New Roman", serif;
+        font-size: 21px;
+        font-style: italic;
+      }
+      .mark-copy {
+        fill: rgba(245, 244, 241, 0.4);
+        font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+        font-size: 8px;
+      }
+    </style>
+  </defs>
+
+  <g transform="translate(210 188)">
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0; 10 -6; -4 9; 7 2; 0 0" keyTimes="0;0.28;0.55;0.78;1"
+        dur="8.7s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="33.7s" repeatCount="indefinite"/>
+        <g>
+          <animateTransform attributeName="transform" type="scale"
+            values="1; 1.05; 0.96; 1.02; 1" keyTimes="0;0.3;0.55;0.8;1" dur="6.4s" repeatCount="indefinite"/>
+          <polygon class="tri" points="0,-148 128.17,74 -128.17,74"/>
+          <text class="v-label" x="0" y="-168" text-anchor="middle">&#960;</text>
+          <text class="v-label" x="156" y="96" text-anchor="middle">i</text>
+          <text class="v-label" x="-156" y="96" text-anchor="middle">e</text>
+        </g>
+      </g>
+    </g>
+
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0; -9 7; 6 -8; -5 -3; 0 0" keyTimes="0;0.22;0.5;0.74;1"
+        dur="11.3s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.45 0.05 0.2 1; 0.45 0.05 0.2 1; 0.45 0.05 0.2 1; 0.45 0.05 0.2 1"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="40 0 0" to="-320 0 0" dur="47.9s" repeatCount="indefinite"/>
+        <g>
+          <animateTransform attributeName="transform" type="scale"
+            values="1; 0.95; 1.06; 0.98; 1" keyTimes="0;0.25;0.52;0.78;1" dur="8.1s" repeatCount="indefinite"/>
+          <polygon class="tri" points="0,-148 128.17,74 -128.17,74"/>
+          <text class="v-label small" x="0" y="-168" text-anchor="middle">T<tspan baseline-shift="sub" font-size="9">topo</tspan></text>
+          <text class="v-label small" x="156" y="96" text-anchor="middle">T<tspan baseline-shift="sub" font-size="9">thermo</tspan></text>
+          <text class="v-label small" x="-156" y="96" text-anchor="middle">T<tspan baseline-shift="sub" font-size="9">algo</tspan></text>
+        </g>
+      </g>
+    </g>
+
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0; 5 10; -8 -4; 3 -7; 0 0" keyTimes="0;0.3;0.58;0.82;1"
+        dur="13.6s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.37 0 0.2 1; 0.37 0 0.2 1; 0.37 0 0.2 1; 0.37 0 0.2 1"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="80 0 0" to="440 0 0" dur="61.4s" repeatCount="indefinite"/>
+        <g>
+          <animateTransform attributeName="transform" type="scale"
+            values="1; 1.04; 0.94; 1.03; 1" keyTimes="0;0.28;0.6;0.85;1" dur="9.5s" repeatCount="indefinite"/>
+          <polygon class="tri" points="0,-148 128.17,74 -128.17,74"/>
+          <text class="v-label small" x="0" y="-168" text-anchor="middle">Order</text>
+          <text class="v-label small" x="156" y="96" text-anchor="middle">&#8706;&#178;=0</text>
+          <text class="v-label small" x="-156" y="96" text-anchor="middle">F(H)</text>
+        </g>
+      </g>
+    </g>
+
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0; 5 4; -6 3; -3 -5; 4 -2; 0 0" keyTimes="0;0.2;0.4;0.65;0.85;1"
+        dur="7.6s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.42 0 0.2 1; 0.42 0 0.2 1; 0.42 0 0.2 1; 0.42 0 0.2 1; 0.42 0 0.2 1"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="22s" repeatCount="indefinite"/>
+        <text class="core-label" text-anchor="middle" dominant-baseline="central">e<tspan baseline-shift="super" font-size="13">i&#952;</tspan></text>
+      </g>
+    </g>
+  </g>
+
+  <text class="mark-copy" x="210" y="388" text-anchor="middle">&#169; 2025 Nanjie Ma. All rights reserved.</text>
+</svg>
