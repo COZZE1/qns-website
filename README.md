@@ -1,6 +1,6 @@
-﻿# Quantum Narrative School — Official Website
+# Quantum Narrative School — Official Website
 
-**Not open source.** All rights reserved © 2018–2026 Quantum Narrative School / Nanjie Ma.  
+**Not open source.** All rights reserved © 2025–2026 Quantum Narrative School / Nanjie Ma.  
 See [LICENSE](./LICENSE). Viewing the live site is allowed; copying this repo for reuse is not.
 
 ## Live site

@@ -16,9 +16,9 @@
   ]);
 
   const NOTICE_ZH =
-    "版权所有 © 2018–2026 量子叙事学派 / Nanjie Ma。禁止任何形式的商业使用、未经授权转载、镜像或盗用本站内容、标识与视觉素材。";
+    "版权所有 © 2025–2026 量子叙事学派 / Nanjie Ma。禁止任何形式的商业使用、未经授权转载、镜像或盗用本站内容、标识与视觉素材。";
   const NOTICE_EN =
-    "Copyright © 2018–2026 Quantum Narrative School / Nanjie Ma. All rights reserved. Commercial use, unauthorized republication, mirroring, or misappropriation of site content, marks, or visuals is strictly prohibited.";
+    "Copyright © 2025–2026 Quantum Narrative School / Nanjie Ma. All rights reserved. Commercial use, unauthorized republication, mirroring, or misappropriation of site content, marks, or visuals is strictly prohibited.";
 
   const host = (location.hostname || "").toLowerCase();
   const isFile = location.protocol === "file:";
