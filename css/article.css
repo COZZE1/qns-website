@@ -23,6 +23,7 @@
 .article-back { color: rgba(245, 244, 241, 0.82); text-decoration: none; font-size: 0.92rem; }
 .article-back:hover, .article-home:hover { color: var(--accent); }
 .article-main { width: min(720px, calc(100% - 2rem)); margin: 0 auto; padding: 2.2rem 0 3rem; }
+.article-main-wide { width: min(860px, calc(100% - 2rem)); }
 .article-header { margin-bottom: 1.6rem; }
 .article-kicker {
   margin: 0 0 0.4rem; text-transform: uppercase; letter-spacing: 0.12em;
@@ -60,6 +61,30 @@
 }
 .article-body code { font-family: Consolas, "IBM Plex Mono", monospace; font-size: 0.9em; }
 .article-body :not(pre) > code { background: rgba(18, 20, 24, 0.06); padding: 0.1em 0.35em; }
+.article-body .table-scroll { overflow-x: auto; margin: 0 0 1rem; -webkit-overflow-scrolling: touch; }
+.article-body table {
+  border-collapse: collapse; width: 100%; margin: 0;
+  font-size: 0.92rem; line-height: 1.45;
+}
+.article-body th, .article-body td {
+  border: 1px solid var(--line, #ccc); padding: 0.45rem 0.55rem;
+  text-align: left; vertical-align: top;
+}
+.article-body th { background: rgba(18, 20, 24, 0.05); font-weight: 600; }
+.article-body .meta { text-align: center; color: var(--muted); margin-bottom: 1.2rem; font-size: 0.95rem; }
+.article-body .ok,
+.article-body .warn,
+.article-body .note,
+.article-body .epistemic {
+  font-size: 0.95rem; padding: 0.85rem 1rem; margin: 1rem 0; border: 1px solid var(--line, #ccc);
+}
+.article-body .ok { background: rgba(40, 120, 60, 0.07); border-color: rgba(40, 120, 60, 0.35); }
+.article-body .warn { background: rgba(180, 120, 40, 0.08); border-color: rgba(160, 110, 40, 0.4); }
+.article-body .epistemic { background: rgba(60, 70, 140, 0.06); border-color: rgba(60, 70, 140, 0.3); }
+.article-body .note { background: rgba(18, 20, 24, 0.04); }
+.article-body .small { font-size: 0.9rem; }
+.article-body hr { border: none; border-top: 1px solid var(--line, #ccc); margin: 1.4rem 0; }
+.article-foot.article-main-wide { width: min(860px, calc(100% - 2rem)); }
 .article-disclaimer {
   margin-top: 2.4rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
   font-size: 0.86rem; color: var(--muted); line-height: 1.6;
