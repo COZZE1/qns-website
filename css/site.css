@@ -744,6 +744,10 @@ a {
   font-size: 0.95rem;
 }
 
+.contact .stance {
+  margin-top: 32px;
+}
+
 /* Triad — three time arrows from the mark */
 .triad {
   background: var(--paper-2);
