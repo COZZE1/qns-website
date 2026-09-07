@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QNM 讲给人听：我们相对别的理论，到底多走了哪一步？</title>
+<meta name="description" content="用人话说明 Soft Hold、三扇门与 1/3：窄优势、未闭合、欢迎核对。非输赢榜。">
+<style>
+*{box-sizing:border-box}
+body{font-family:"Microsoft YaHei","PingFang SC",Georgia,serif;max-width:820px;margin:0 auto;padding:36px 20px 56px;line-height:1.9;color:#111;background:#fff}
+h1{font-size:1.4rem;line-height:1.4;margin:0 0 8px}
+.lead{color:#444;font-size:0.95rem;margin:0 0 22px}
+h2{font-size:1.14rem;margin:1.7em 0 0.55em;border-bottom:1px solid #ccc;padding-bottom:4px}
+h3{font-size:1.02rem;margin:1.2em 0 0.4em}
+p{margin:0.65em 0;text-align:justify}
+ul,ol{margin:0.5em 0;padding-left:1.35em}
+li{margin:0.35em 0}
+a{color:#0055aa}
+.box{padding:14px 16px;margin:16px 0;border:1px solid #999}
+.box-warn{background:#fff8f0;border-color:#aa8844}
+.box-ok{background:#f6fff6;border-color:#448844}
+.box-muted{background:#f7f7f7;border-color:#bbb}
+.door{display:grid;grid-template-columns:1fr;gap:10px;margin:14px 0}
+@media(min-width:640px){.door{grid-template-columns:1fr 1fr 1fr}}
+.door-card{border:1px solid #aaa;padding:12px;background:#fafafa}
+.door-card strong{display:block;margin-bottom:6px}
+.pass{color:#1a6b1a;font-weight:700}
+.fail{color:#8a3030;font-weight:700}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:0.9rem}
+th,td{border:1px solid #bbb;padding:8px;text-align:left;vertical-align:top}
+th{background:#eee}
+footer{margin-top:36px;padding-top:14px;border-top:1px solid #ccc;font-size:0.82rem;color:#555}
+.btn{display:inline-block;margin:8px 12px 8px 0;padding:9px 16px;border:1px solid #222;text-decoration:none;color:#111;font-size:0.88rem}
+.btn-dark{background:#222;color:#fff}
+.nav{font-size:0.88rem;margin:12px 0 20px}
+.nav a{margin-right:12px}
+.small{font-size:0.88rem;color:#555}
+.quote{font-size:1.05rem;padding:12px 14px;border-left:4px solid #333;background:#f4f4f4;margin:16px 0}
+</style>
+</head>
+<body>
+
+<h1>我们相对别的理论，到底多走了哪一步？</h1>
+<p class="lead">
+  给非内部读者的说明 · 2026-07-24 · 马楠杰 ·
+  <a href="https://orcid.org/0009-0002-4415-1209">ORCID</a><br>
+  <span class="small">官网「进展说明」子页用 · 不是首页大标题</span>
+</p>
+
+<div class="nav">
+  <a href="index.html">官网首页</a>
+  <a href="fair-progress-en.html">English</a>
+</div>
+
+<div class="box box-warn">
+<strong>比较结论已被取代 — 2026-08-04。</strong>
+本页只保留为历史快照。下文关于Soft Hold B1已支付、Tier-U 1/3、本轨窄领先和T1–T9均值的说法，不再是当前的接近真相判断。客观重评记录为<code>soft_gate=NOT_PASSED</code>，并将科学交付（QNM约0.111/2）与过程诚信（约1.5/2）拆开。引用下文任何分数或比较前，请先读<a href="objective-assessment-zh.html">订正页</a>。
+</div>
+
+<div class="quote">
+一句话：<strong>我们还没「解释完宇宙怎么来的」</strong>；但在大家共用的三扇硬门槛里，
+<strong>「如何留下一条可观测记录」这扇门，我们先交了可核对的作业</strong>——多数对照理论还没交。
+这叫窄优势，不叫大满贯。
+</div>
+
+<div class="box box-warn">
+<strong>先泼冷水（避免误会）：</strong>
+<ul style="margin:0.4em 0 0;padding-left:1.2em">
+<li>不是 breakthrough，也不是「宇宙真相已经找到」</li>
+<li>「1/3」= 三扇门过了一扇，<strong>不是</strong>宇宙闭合了三分之一</li>
+<li>观测拟合上，ΛCDM / Planck 路线仍然更强——我们不跟它们比 χ² 输赢</li>
+<li>2026-07-20 的 T1–T9 表（本轨均值 8.111）是<strong>存档形状密度快照</strong>，不是本页三扇门的 1/3，不是 Standard A/B 付款，也不是现排名</li>
+</ul>
+</div>
+
+<h2>1. 我们在干什么？（人话）</h2>
+<p>
+常见宇宙学很擅长回答：<strong>天空看起来像什么</strong>（拟合数据）。
+</p>
+<p>
+QNM 这条线想多问一步：<strong>这些读数，能不能从一套事先说清楚的「生成规则」一步步推出来</strong>，
+并且每一步都能被外人核对、也能被证伪——而不是事后调参贴上去。
+</p>
+<p>
+所以我们比的不是「谁论文引用多」，而是：<strong>谁在关键步骤上真正交了作业</strong>。
+</p>
+
+<h2>2. 为什么要「同一把尺子」？</h2>
+<p>
+如果每人用自己的标准，很容易变成「我们永远第一」。
+</p>
+<p>
+我们做了相反的事：先公开一套<strong>谁都要用的清单</strong>（本轨、无边界、张量凝聚、因果集等都按同一套问），
+再报各家过了几扇门。这样「优势」才说得清，也才敢让外人挑刺。
+</p>
+
+<h2>3. 三扇硬门槛（像盖房子）</h2>
+<p>
+要把「我们这个可观测宇宙是怎么发生的」说到位，至少得过三扇门。
+可以把它想成盖房子：
+</p>
+
+<div class="door">
+  <div class="door-card">
+    <strong>① 动力门 · 还没过</strong>
+    <span class="fail">本轨：未过</span><br>
+    <span class="fail">多数对照：未过</span>
+    <p class="small" style="margin:8px 0 0">「未过」= 这扇房子门<strong>还没关上</strong>，不是「完全没有原生动力学对象」。内部 Standard A 的 native-dynamics 格上，QNM 是 1（scoped、未付）；几家审阅竞品也是 1；无人是 2。</p>
+  </div>
+  <div class="door-card">
+    <strong>② 记录门 · 我们过了</strong>
+    <span class="pass">本轨：已过（Soft Hold B1）</span><br>
+    <span class="fail">多数对照：未过</span>
+    <p class="small" style="margin:8px 0 0">有没有留下<strong>可核对的经典记录 / 指针结构</strong>，
+    而不是只说「会经典化」？这就是 Soft Hold 在交的作业。</p>
+  </div>
+  <div class="door-card">
+    <strong>③ 选支门 · 还没过</strong>
+    <span class="fail">本轨：未过</span><br>
+    <span class="fail">多数对照：未过</span>
+    <p class="small" style="margin:8px 0 0">在很多可能历史里，凭什么钉住「我们这条」？
+    选支规则必须焊在已付的动力学上，不能口头宣布。</p>
+  </div>
+</div>
+
+<p>
+三扇都过，才谈得上「可以宣称发生学闭合」。  
+现在：<strong>1 过、2 未过 → 记作 1/3</strong>。  
+对照纲领在同一尺上，常常是 <strong>0/3</strong>（三扇都还没过）。
+</p>
+
+<div class="box box-ok">
+<strong>所以「优势」到底是什么？</strong>
+<p style="margin:0.4em 0 0">
+不是「我们比别人更接近全部真相」这种大话，而是更具体的一句：
+</p>
+<p style="margin:0.4em 0 0">
+<strong>在「如何留下一条可核对的记录」这件事上，我们先交出了可公开、可杀、可对照的中间成果；
+很多出名的发生学/量子引力叙事，在同一严格问法下，还交不出来。</strong>
+</p>
+</div>
+
+<h2>4. Soft Hold 是啥？（别被英文吓到）</h2>
+<p>
+<strong>Soft Hold</strong> 可以粗理解为：给理论装一套<strong>「软舞台 + 记录规则」</strong>——
+世界不能只在抽象方程里晃，还得能形成<strong>可读取的记录结构</strong>（谁被记下、如何导出经典读数）。
+</p>
+<p>
+<strong>B1</strong> 是其中一块已经密封的作业（有明确验收条、也有故意做坏来检验的对照）。
+过了它 = 记录门算「交卷」；<strong>不等于</strong>整栋楼盖完。
+</p>
+
+<h2>5. 那别人是不是什么都没有？</h2>
+<p>
+当然不是。换一把尺子看「机制形状菜单有多满」时：
+</p>
+<ul>
+<li><strong>GFT（张量凝聚）</strong>一类：预几何 + 动力学<strong>形状更密</strong>——生成核那一块，我们仍应向他们学。</li>
+<li><strong>无边界 / 隧穿</strong>一类：选支<strong>形状语言</strong>很强——但「记录真支付」仍常过不了我们那扇硬门。</li>
+<li><strong>ΛCDM</strong>：观测拟合冠军——但本来就不是「定律从何而来」赛道。</li>
+</ul>
+<p>
+所以诚实排序是：
+</p>
+<table>
+<tr><th>问题</th><th>目前谁更像领先</th></tr>
+<tr><td>观测天空像什么？</td><td>ΛCDM / 标准宇宙学</td></tr>
+<tr><td>生成动力学形状有多密？</td><td>往往 GFT 等更密</td></tr>
+<tr><td>选支形状语言？</td><td>往往无边界 / 隧穿更熟</td></tr>
+<tr><td><strong>记录 / 经典化「真交卷」？</strong></td><td><strong>本轨有窄优势（Soft Hold B1）</strong></td></tr>
+<tr><td>文献形状密度（T1–T9 均值）？</td><td>2026-07-20 存档快照报本轨均值 8.111。那张表<strong>不是</strong>本页三扇门的 1/3，<strong>不是</strong> Standard A/B 付款，也<strong>不是</strong>现排名。</td></tr>
+<tr><td>生成核切片 T1+T2？</td><td>同一份存档快照。不要读成本页房子门，也不要读成发生学付款。</td></tr>
+<tr><td>整条发生学已闭合？</td><td><strong>谁都没有</strong></td></tr>
+</table>
+
+<p class="small">
+本页对外活尺子是三扇门：硬门槛 Tier-U <strong>1/3</strong>。中间层 / 文献合成分（含 2026-07-20 T1–T9 Official Fair Edition，本轨均值 8.111）是存档形状密度快照——不是主对照排名，也不是发生学付款。
+2026-07-19 公开读法「Tier-U 全 0/3 / Soft Hold 未付 / 均值 ≈4.778」已被 Soft Hold B1 + 本页读法取代。
+</p>
+
+<h2>6. 常见误会（FAQ）</h2>
+<p><strong>Q：1/3 是不是宇宙真相完成度 33%？</strong><br>
+A：不是。只表示三扇硬门槛过了一扇。</p>
+<p><strong>Q：是不是说别的理论都错了？</strong><br>
+A：不是。对照不是否定。很多理论在别的维度更强。</p>
+<p><strong>Q：你们是不是自己改尺子抬自己？</strong><br>
+A：三扇门事先公开，本轨与对照同用。2026-07-20 的 T1–T9 形状密度表只作存档，不是本页现排名。</p>
+<p><strong>Q：下一步该看什么才算真进展？</strong><br>
+A：盯另外两扇还没关上的房子门：<strong>已付的生成动力学</strong>、以及<strong>选支焊死在已付动力学上</strong>。Standard A 的 native-dynamics 格是 1，并不等于那扇门已关。</p>
+<p><strong>Q：均值 5.0 或 8.111 是不是比别人「赢了」？</strong><br>
+A：不是排名赛。硬门槛仍是 1/3。存档 T1–T9 合成分不是发生学付款。</p>
+
+<h2>7. 想核对的人去哪（最低清单）</h2>
+<ul>
+<li>主文 §3.12.0a：Soft Hold B1（CT819）· 三层公平 SSOT（CT836）</li>
+<li>补充材料公平包：<code>docs/06</code> · <code>docs/10</code> · <code>CLAIM_BOUNDARY</code>；Maps <code>62_*</code> / <code>64_*</code></li>
+<li>治理旗标：Soft Hold B1 已付 · 公平 Tier-U 仍 1/3 · L06 仍未付；发生学 tip 旗见
+  <a href="genesis-tip-en.html">发生学 tip 披露</a>
+  （勿把本页旧快照读成现行 tip）</li>
+</ul>
+<p class="small">欢迎挑刺：过或不过都有价值。完整表放 Zenodo，不塞进首页。</p>
+
+<p>
+<a class="btn btn-dark" href="https://doi.org/10.5281/zenodo.22638568">主文 Zenodo</a>
+<a class="btn" href="https://orcid.org/0009-0002-4415-1209">ORCID</a>
+<a class="btn" href="fair-progress-en.html">English</a>
+</p>
+
+<footer>
+马楠杰 · QNM · 2026-07-24 · 人话版进展说明 · 勿作首页英雄标题<br>
+技术 SSOT：CT836 三层公平计分 · Maps 62/64 · tip 旗见 <a href="genesis-tip-en.html">发生学 tip 披露</a>（≠ Tier-U 闭合）
+</footer>
+
+</body>
+</html>
