@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Three stages of cosmogenesis: covering kernel to classical spacetime</title>
+  <desc id="desc">Bilingual day-2 vector for Kiro T2. Stage 1 orange covering-kernel seed, stage 2 blue quantum interpolation, stage 3 green holographic projection.</desc>
+  <defs>
+    <style type="text/css"><![CDATA[
+      .bg { fill: #2b2f36; }
+      .title-zh { fill: #f2f4f7; font-family: "Noto Sans CJK SC", sans-serif; font-size: 34px; font-weight: 700; }
+      .title-en { fill: #c8ced8; font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 18px; font-weight: 500; }
+      .card-title-zh { fill: #ffffff; font-family: "Noto Sans CJK SC", sans-serif; font-size: 24px; font-weight: 700; }
+      .card-title-en { fill: #ffffff; font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 15px; font-weight: 600; opacity: 0.92; }
+      .line-zh { fill: #ffffff; font-family: "Noto Sans CJK SC", sans-serif; font-size: 15px; }
+      .line-en { fill: #e8edf5; font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 13px; opacity: 0.9; }
+      .badge { fill: #ffffff; font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 13px; font-weight: 700; }
+      .arrow { fill: #eef2f7; font-family: "Noto Sans CJK SC", sans-serif; font-size: 13px; font-weight: 600; }
+      .arrow-en { fill: #d5dbe6; font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 11px; }
+      .note { fill: #f0a56a; font-family: "Noto Sans CJK SC", sans-serif; font-size: 15px; }
+      .note-en { fill: #d9b08c; font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 12px; }
+      .meta { fill: #9aa3b2; font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 12px; }
+    ]]></style>
+  </defs>
+  <rect class="bg" width="1280" height="720" rx="0"/>
+  <text class="title-zh" x="640" y="58" text-anchor="middle">宇宙诞生三阶段：从覆盖核到经典时空</text>
+  <text class="title-en" x="640" y="86" text-anchor="middle">Three stages of cosmogenesis: covering kernel to classical spacetime</text>
+
+  <!-- Stage 1 -->
+  <rect x="70" y="140" width="300" height="400" rx="18" fill="#e8943a"/>
+  <text class="badge" x="220" y="172" text-anchor="middle">阶段 1 · Stage 1</text>
+  <text class="card-title-zh" x="220" y="214" text-anchor="middle">覆盖核种子</text>
+  <text class="card-title-en" x="220" y="238" text-anchor="middle">Covering-kernel seed</text>
+  <text class="line-zh" x="220" y="286" text-anchor="middle">N ≈ 21–100 · 离散</text>
+  <text class="line-en" x="220" y="308" text-anchor="middle">N ≈ 21–100 · discrete</text>
+  <text class="line-zh" x="220" y="346" text-anchor="middle">二元覆盖 · 端口预算</text>
+  <text class="line-en" x="220" y="368" text-anchor="middle">Binary covering · port budget</text>
+  <text class="line-zh" x="220" y="406" text-anchor="middle">因果骨架 · 拓扑信息</text>
+  <text class="line-en" x="220" y="428" text-anchor="middle">Causal skeleton · topology</text>
+  <text class="line-zh" x="220" y="476" text-anchor="middle">CP27 / CP30 / CP33 / CP34</text>
+
+  <!-- Arrow 1 -->
+  <path d="M390 330 L470 330" stroke="#eef2f7" stroke-width="3" fill="none"/>
+  <polygon points="470,322 490,330 470,338" fill="#eef2f7"/>
+  <text class="arrow" x="430" y="288" text-anchor="middle">跨越边界</text>
+  <text class="arrow-en" x="430" y="306" text-anchor="middle">boundary (to construct)</text>
+
+  <!-- Stage 2 -->
+  <rect x="500" y="140" width="300" height="400" rx="18" fill="#3d7dd9"/>
+  <text class="badge" x="650" y="172" text-anchor="middle">阶段 2 · Stage 2</text>
+  <text class="card-title-zh" x="650" y="214" text-anchor="middle">量子插值</text>
+  <text class="card-title-en" x="650" y="238" text-anchor="middle">Quantum interpolation</text>
+  <text class="line-zh" x="650" y="286" text-anchor="middle">N ≈ 100–10⁶ · 量子</text>
+  <text class="line-en" x="650" y="308" text-anchor="middle">N ≈ 100–10⁶ · quantum</text>
+  <text class="line-zh" x="650" y="346" text-anchor="middle">GFT 凝聚 / MERA</text>
+  <text class="line-en" x="650" y="368" text-anchor="middle">GFT condensate / MERA</text>
+  <text class="line-zh" x="650" y="406" text-anchor="middle">纠缠网络 · 超线性链接</text>
+  <text class="line-en" x="650" y="428" text-anchor="middle">Entanglement · superlinear links</text>
+  <text class="line-zh" x="650" y="476" text-anchor="middle">CP34 暗示插值需求</text>
+  <text class="line-en" x="650" y="498" text-anchor="middle">CP34 implies interpolation</text>
+
+  <!-- Arrow 2 -->
+  <path d="M820 330 L900 330" stroke="#eef2f7" stroke-width="3" fill="none"/>
+  <polygon points="900,322 920,330 900,338" fill="#eef2f7"/>
+  <text class="arrow" x="860" y="288" text-anchor="middle">全息投影</text>
+  <text class="arrow-en" x="860" y="306" text-anchor="middle">holography (known)</text>
+
+  <!-- Stage 3 -->
+  <rect x="930" y="140" width="280" height="400" rx="18" fill="#3aa86a"/>
+  <text class="badge" x="1070" y="172" text-anchor="middle">阶段 3 · Stage 3</text>
+  <text class="card-title-zh" x="1070" y="214" text-anchor="middle">全息投影</text>
+  <text class="card-title-en" x="1070" y="238" text-anchor="middle">Holographic projection</text>
+  <text class="line-zh" x="1070" y="286" text-anchor="middle">N → ∞ · 连续</text>
+  <text class="line-en" x="1070" y="308" text-anchor="middle">N → ∞ · continuous</text>
+  <text class="line-zh" x="1070" y="346" text-anchor="middle">QNM 矩阵全息读出</text>
+  <text class="line-en" x="1070" y="368" text-anchor="middle">QNM matrix holographic readout</text>
+  <text class="line-zh" x="1070" y="406" text-anchor="middle">4D Lorentz 时空</text>
+  <text class="line-en" x="1070" y="428" text-anchor="middle">4D Lorentz spacetime</text>
+  <text class="line-zh" x="1070" y="476" text-anchor="middle">已知全息路径</text>
+  <text class="line-en" x="1070" y="498" text-anchor="middle">Known holographic path</text>
+
+  <text class="note" x="640" y="600" text-anchor="middle">CP30 划的是阶段边界，不是覆盖核失败。种子停在 N~100 是特征。</text>
+  <text class="note-en" x="640" y="622" text-anchor="middle">CP30 marks a stage boundary, not covering-kernel failure. Stopping near N~100 is a feature.</text>
+  <text class="meta" x="640" y="668" text-anchor="middle">Kiro T2 day-2 vector · bilingual · no 9-theory strip · 2026-10-23 Asia/Shanghai · SVG ready for day-3 PNG/PDF export</text>
+</svg>
