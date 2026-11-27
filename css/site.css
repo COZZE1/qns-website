@@ -402,7 +402,7 @@ a {
 }
 
 .hero-brand {
-  margin: 0 0 14px;
+  margin: 0 0 8px;
   font-family: var(--font-display);
   font-weight: 500;
   font-size: clamp(2rem, 5.5vw, 3.4rem);
@@ -410,6 +410,18 @@ a {
   line-height: 1.05;
   opacity: 0;
   animation: rise 1s ease 0.35s forwards;
+}
+
+.hero-brand-sub {
+  margin: 0 0 18px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(0.82rem, 1.5vw, 1.02rem);
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  color: rgba(245, 244, 241, 0.72);
+  opacity: 0;
+  animation: rise 1s ease 0.42s forwards;
 }
 
 .hero h1 {
@@ -1114,6 +1126,7 @@ a {
 
   .hero-logo,
   .hero-brand,
+  .hero-brand-sub,
   .hero h1,
   .hero-lead,
   .hero-cta,
