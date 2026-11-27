@@ -547,6 +547,28 @@ a {
   color: var(--accent);
 }
 
+/* Paper-background ghosts: cream-on-cream is invisible until hover. */
+#disclosures .btn-ghost {
+  border-color: rgba(18, 20, 24, 0.35);
+  color: var(--ink);
+  background: #fff;
+}
+#disclosures .btn-ghost:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+  background: var(--paper-2);
+}
+#disclosures .btn-primary {
+  background: var(--ink);
+  color: #f5f4f1;
+  border-color: var(--ink);
+}
+#disclosures .btn-primary:hover {
+  background: var(--ink-2);
+  color: #f5f4f1;
+  border-color: var(--ink-2);
+}
+
 .hero-meta {
   margin-top: 16px;
   margin-bottom: 0;
